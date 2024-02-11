@@ -6,4 +6,4 @@ categories: Boomersprüche
 tags: Tiere
 ---
 
-![]({{'/assets/images/mücke-elefant.webp'}}){: .center-image }{:width="100%"}*Mücke Elefant*
+![]({{'/assets/images/muecke-elefant.webp'}}){: .center-image }{:width="100%"}*Mücke Elefant*
