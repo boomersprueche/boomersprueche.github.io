@@ -1,0 +1,111 @@
+
+
+
+
+
+
+
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Boomersprüche</title>
+    <meta name="theme-color" content="#222222"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/popper.min.js"></script>
+    <script src="/assets/js/bootstrap4.min.js"></script>
+    <script src="/assets/js/header.js"></script>
+    <script src="/assets/css/svg-with-js/js/fontawesome-all.js"></script>
+    <link href="/assets/css/bootstrap4.min.css" rel="stylesheet">
+    <link href="/assets/css/theme.css" rel="stylesheet">
+    <link href="/assets/css/syntax.css" rel="stylesheet">
+ </head>
+
+<body>
+
+<script type="text/javascript">
+    WebFontConfig = {
+        google: {
+            families: ['Ubuntu::latin']
+        }
+    };
+    (function () {
+        var wf = document.createElement('script');
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+    })();
+</script>
+
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="/">Boomersprüche</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="/Archiv">/Archiv</a>
+                <a class="nav-item nav-link" href="/tags">/Tags</a>
+                <a class="nav-item nav-link" href="/ueber">/Über</a>
+                <a class="nav-item nav-link" href="/Galerie">/Galerie</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+    <div class="wrapper">
+      <div class="content">
+        <div class="container container-center">
+          <div class="row">
+            <div class="col-md-8 offset-md-1">
+              <div class="card">
+                <p>Run this under <strong>tag</strong> folder in order to generate a page for each of your tags. If you added a new tag you need to come to this page and run the script again.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">echo</span> <span class="s1">$'---</span><span class="se">\n</span><span class="s1">layout: tag_index</span><span class="se">\n</span><span class="s1">tag: Tiere </span><span class="se">\n</span><span class="s1">---'</span> <span class="o">&gt;</span> <span class="s1">'Tiere.md'</span> &amp;
+<span class="nb">echo</span> <span class="s1">$'---</span><span class="se">\n</span><span class="s1">layout: tag_index</span><span class="se">\n</span><span class="s1">tag: Eisenbahn </span><span class="se">\n</span><span class="s1">---'</span> <span class="o">&gt;</span> <span class="s1">'Eisenbahn.md'</span> &amp;
+<span class="nb">echo</span> <span class="s1">$'---</span><span class="se">\n</span><span class="s1">layout: tag_index</span><span class="se">\n</span><span class="s1">tag: Bier </span><span class="se">\n</span><span class="s1">---'</span> <span class="o">&gt;</span> <span class="s1">'Bier.md'</span> &amp;
+<span class="nb">echo</span> <span class="s1">$'---</span><span class="se">\n</span><span class="s1">layout: tag_index</span><span class="se">\n</span><span class="s1">tag: Farben </span><span class="se">\n</span><span class="s1">---'</span> <span class="o">&gt;</span> <span class="s1">'Farben.md'</span> &amp;
+<span class="nb">echo</span> <span class="s1">$'---</span><span class="se">\n</span><span class="s1">layout: tag_index</span><span class="se">\n</span><span class="s1">tag: Eis </span><span class="se">\n</span><span class="s1">---'</span> <span class="o">&gt;</span> <span class="s1">'Eis.md'</span> &amp;
+<span class="nb">echo</span> <span class="s1">$'---</span><span class="se">\n</span><span class="s1">layout: tag_index</span><span class="se">\n</span><span class="s1">tag: Versprechen </span><span class="se">\n</span><span class="s1">---'</span> <span class="o">&gt;</span> <span class="s1">'Versprechen.md'</span> &amp;
+<span class="nb">echo</span> <span class="s1">$'---</span><span class="se">\n</span><span class="s1">layout: tag_index</span><span class="se">\n</span><span class="s1">tag: Aufbleiben </span><span class="se">\n</span><span class="s1">---'</span> <span class="o">&gt;</span> <span class="s1">'Aufbleiben.md'</span> &amp;
+<span class="nb">echo</span> <span class="s1">$'---</span><span class="se">\n</span><span class="s1">layout: tag_index</span><span class="se">\n</span><span class="s1">tag: Schuhe </span><span class="se">\n</span><span class="s1">---'</span> <span class="o">&gt;</span> <span class="s1">'Schuhe.md'</span> &amp;
+<span class="nb">echo</span> <span class="s1">$'---</span><span class="se">\n</span><span class="s1">layout: tag_index</span><span class="se">\n</span><span class="s1">tag: Kirche </span><span class="se">\n</span><span class="s1">---'</span> <span class="o">&gt;</span> <span class="s1">'Kirche.md'</span> &amp;</code></pre></figure>
+
+
+              </div>
+            </div>
+            <div class="col-md-3 hidden-xs">
+              <div class="sidebar ">
+  <h2>Neueste Einträge</h2>
+  <ul>
+    
+    <li><a href="/kirche-im-dorf/">Die Kirche im Dorf lassen</a></li>
+    
+    <li><a href="/zug-abgefahren/">Der Zug ist abgefahren</a></li>
+    
+    <li><a href="/schuh-draus-copy/">So wird ein Schuh draus</a></li>
+    
+    <li><a href="/puppen-aufbleiben/">Bis in die Puppen aufbleiben</a></li>
+    
+    <li><a href="/brief-siegel/">Da geb ich dir Brief und Siegel drauf</a></li>
+    
+  </ul>
+</div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "Drei Bier sind auch ein Brot"
+date:   2024-01-16 08:00:00 +0200
+categories: Boomersprüche
+tags: Bier
+---
+
+![]({{'/assets/images/drei-bier.png'}}){: .center-image }{:width="100%"}*bier*

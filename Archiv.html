@@ -1,0 +1,25 @@
+---
+layout: page
+title: Blog archive
+---
+
+<div class="page-content wc-container">
+	<div class="post">
+		<h1>Archiv</h1>  
+        <a href="{{ 'Archiv_no_description' | relative_url }}">Details ausblenden</a>
+		{% for post in site.posts %}
+			{% capture currentdate %}{{post.date | date: "%B %Y"}}{% endcapture %}
+			{% if currentdate != date %}
+				{% unless forloop.first %}</ul>{% endunless %}
+					<h5>{{ currentdate }}</h5>
+					<ul class="posts">
+					{% capture date %}{{currentdate}}{% endcapture %} 
+				{% endif %}
+            <li class="archive_list">
+                <time>{{ post.date | date_to_string }}</time>
+                <a class="archive_list_article_link" href='{{ post.url | relative_url }}'>{{post.title}}</a>
+                <p>{{post.description}}</p>
+            </li>
+	{% endfor %}
+	</div>
+</div>
